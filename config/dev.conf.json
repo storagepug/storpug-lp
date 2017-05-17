@@ -1,0 +1,13 @@
+{
+  "google": {
+    "ganalytics": ""
+  },
+  "firebase": {
+    "apiKey": "",
+    "authDomain": "",
+    "databaseUrl": "",
+    "projectId": "",
+    "storageBucket": "",
+    "messagingSenderId": ""
+  }
+}
