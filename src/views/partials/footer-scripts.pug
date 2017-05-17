@@ -1,0 +1,24 @@
+// JavaScript plugins comes here
+script(src='js/vendors/jquery-2.0.3.min.js')
+script(src='js/vendors/jquery.easing.min.js')
+script(src='js/vendors/jquery.scrollTo.js')
+script(src='js/vendors/jquery.form.js')
+script(src='js/main.min.js')
+script(src='js/vendors/retina.js')
+script(src='js/vendors/waypoints.min.js')
+script(src='js/vendors/owl.carousel.min.js')
+script(src='js/vendors/nivo-lightbox.min.js')
+script(type='text/javascript').
+  $('document').ready(function(){
+    $('#subscribe-form').ajaxForm({
+      target: '#preview',
+      success: function() {
+        $('#subscribe-form').slideUp('slow');
+        $('#preview').css({"opacity":"1"});
+      }
+    });
+  });
+script.
+  var url ='images/icons.svg';
+  var c=new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
+  document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)

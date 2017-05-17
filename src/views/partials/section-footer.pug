@@ -1,0 +1,35 @@
+// ###############################
+// Newsletter and Footer #########
+// ###############################
+section#footer
+  .container
+    #newsletter.row
+      .col-sm-6.col-sm-offset-3.col-md-6.col-md-offset-3.col-lg-6.col-lg-offset-3
+        h2 Sign up for Early Access
+        p
+          | Be the first in line to try storpug, the easy self storage management software.
+        #newsletter_form
+          form#subscribe-form.subscribe-form(action='php/send.php', method='post')
+            input.subscribe-input(type='email', name='email', placeholder='Enter your e-mail address...', required='')
+            button.subscribe-submit(type='submit') Notify Me
+        #preview
+    .row
+      #share.col-sm-10.col-sm-offset-1.col-md-10.col-md-offset-1.col-lg-10.col-lg-offset-1
+        #social_icons
+          ul
+            li
+              svg#fb_icon(viewbox='0 0 32 32', onclick="location.href='#'")
+                use(xlink:href='#facebook')
+            li
+              svg#tw_icon(viewbox='0 0 32 32', onclick="location.href='#''")
+                use(xlink:href='#twitter')
+            li
+              svg#in_icon(viewbox='0 0 32 32', onclick="location.href='#'")
+                use(xlink:href='#linkedin')
+            li
+              svg#g_icon(viewbox='0 0 32 32', onclick="location.href='#'")
+                use(xlink:href='#google-plus')
+        p Made in Knoxville | storpug © Copyright 2017
+        p
+          | Pug Logo designed by 
+          a.footer-link(href='“http://www.freepik.com/free-vector/pretty-set-of-four-dogs-in-flat-design_1086614.htm“', target='_blank') Freepik
