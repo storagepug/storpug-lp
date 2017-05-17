@@ -66,6 +66,7 @@ We couldn't have done it without these folks:
 * Firebase
 * Freepik
 * UglifyJs
+* Imagemin
 * Google Fonts
 * Bootstrap
 * http://shegy.pl/
