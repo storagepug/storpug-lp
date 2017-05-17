@@ -11,3 +11,4 @@ npm-debug.log
 
 # Custom
 config/prod.conf.json
+dist/
