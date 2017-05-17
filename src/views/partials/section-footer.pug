@@ -9,9 +9,9 @@ section#footer
         p
           | Be the first in line to try storpug, the easy self storage management software.
         #newsletter_form
-          form#subscribe-form.subscribe-form(action='php/send.php', method='post')
-            input.subscribe-input(type='email', name='email', placeholder='Enter your e-mail address...', required='')
-            button.subscribe-submit(type='submit') Notify Me
+          form#subscribe-form.subscribe-form()
+            input.subscribe-input(type='email', name='email', id='email', placeholder='Enter your e-mail address...', required='')
+            button.subscribe-submit(type='submit', id='signUp') Notify Me
         #preview
     .row
       #share.col-sm-10.col-sm-offset-1.col-md-10.col-md-offset-1.col-lg-10.col-lg-offset-1
