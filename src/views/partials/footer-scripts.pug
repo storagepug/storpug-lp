@@ -27,7 +27,9 @@ script.
       event.preventDefault()
       var email = document.getElementById('email').value;
       console.log(email)
-      firebase.database().ref('earlyAccess').push({email: email}, function (event) {
+      firebase.database().ref('earlyAccessSignUp').push({email: email}, function (event) {
           console.log(event)
+          document.getElementById('email').value = '';
+          document.getElementById('hide').style.display = 'block';
       })
   });
