@@ -1,0 +1,37 @@
+{
+  "name": "storpug-lp",
+  "version": "1.0.0",
+  "description": "Landing page for storpug.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/gulp",
+    "deploy": "firebase deploy",
+    "serve": "npm run watch & ./node_modules/.bin/http-server dist",
+    "watch": "./node_modules/.bin/gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/storpug/storpug-lp.git"
+  },
+  "author": "storpug",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/storpug/storpug-lp/issues"
+  },
+  "homepage": "https://github.com/storpug/storpug-lp#readme",
+  "devDependencies": {
+    "firebase-tools": "^3.8.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-pug": "^3.3.0",
+    "gulp-uglify": "^2.1.2",
+    "http-server": "^0.10.0",
+    "jshint": "^2.9.4",
+    "pug": "^2.0.0-rc.1",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
