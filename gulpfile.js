@@ -19,7 +19,8 @@ var paths = {
  styles: ['css/**/*'],
  html: ['index.html', '404.html'],
  pug: ['views/index.pug'],
- images: ['images/**/*.png', 'images/**/*.jpg', 'images/**/*.svg'],
+ images: ['images/**/*.png', 'images/**/*.jpg'],
+ svg: ['images/**/*.svg'],
  extras: ['crossdomain.xml', 'humans.txt', 'manifest.appcache', 'robots.txt', 'favicon.ico'],
 };
 
@@ -42,7 +43,7 @@ gulp.task('imagemin', ['clean'], function() {
 });
 
 gulp.task('copy-image', ['clean'], function() {
- // Copy html
+ // Copy images during development
  return gulp.src(paths.images, {cwd: bases.src})
  .pipe(gulp.dest(bases.dist + 'images'));
 });
@@ -51,6 +52,9 @@ gulp.task('copy', ['clean'], function() {
 
  gulp.src(paths.styles, {cwd: bases.src})
  .pipe(gulp.dest(bases.dist + 'css'));
+
+ gulp.src(paths.svg, {cwd: bases.src})
+ .pipe(gulp.dest(bases.dist + 'images'));
 
  gulp.src(paths.vendors, {cwd: 'src/**'})
  .pipe(gulp.dest(bases.dist));
